@@ -26,8 +26,7 @@ jobs:
       run: mvn clean install
 
     - name: Upload JAR file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: factionsuuid
         path: target/*.jar
-
